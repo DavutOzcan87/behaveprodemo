@@ -11,3 +11,9 @@ Feature: Login Page
     Given a standart user
     When credentials entered
     Then user can he home page
+
+  @DEMO-1
+  Scenario: Login not allowed if credentials are not correct
+    Given a user with invalid credentials
+    When login button pressed
+    Then user has shown an error
