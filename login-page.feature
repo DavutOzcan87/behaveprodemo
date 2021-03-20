@@ -12,7 +12,7 @@ Feature: Login Page
     When credentials entered
     Then user can he home page
 
-  @DEMO-1 @MANUAL
+  @DEMO-1
   Scenario: Login not allowed if credentials are not correct
     Given a user with invalid credentials
     When login button pressed
